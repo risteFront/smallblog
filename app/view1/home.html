@@ -1,1 +1,26 @@
-<p>This is the partial for view 1.</p>
+<div class="row"ng-controller="PostCtrl">
+<div class="col-md-8">
+<h3>Your posts (3)</h3>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Description</th>
+			<th>Username</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="post in posts">
+			<td>{{post.title}}</td>
+			<td>{{post.description}}</td>
+			<td>{{post.username}}</td>
+			<td><button class="btn btn-primary"ng-click="showEditForm(post)">Edit</button>			
+			</td>
+			<td><button class="btn btn-danger"ng-click="deleteForm(post)">Delete</button></td>
+
+		</tr>
+	</tbody>
+   
+</table>
+</div>
+</div>

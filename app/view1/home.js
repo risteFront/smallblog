@@ -16,6 +16,8 @@ angular.module('myApp.home', ['ngRoute','firebase'])
 .controller('HomeCtrl', [function() {
 
 }])
-.controller('PostCtrl',[function(){
-	
+.controller('PostCtrl'['$scope','$http','$firebaseArray',function($scope,$http,$firebaseArray){
+	   var ref = new Firebase('https://smallblog.firebaseio.com/post');
+	  $scope.posts = $firebaseArray(ref);
+	  console.log($scope.posts);
 }])
