@@ -6,7 +6,8 @@ angular.module('myApp', [
   'myApp.home',
   'myApp.version',
   "firebase",
-  'myApp.post'
+  'myApp.post',
+  'myApp.login'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/home'});
