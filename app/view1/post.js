@@ -21,7 +21,7 @@ angular.module('myApp.post',['ngRoute','firebase'])
        	$scope.displayUsername    =index.username 
        	
        })
-	}, 4000);      
+	}, 300000);      
        
 
 
