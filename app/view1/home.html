@@ -1,6 +1,9 @@
 <div class="row"ng-controller="PostCtrl">
+	<div>{{RandomPost.post}}</div>
+
 	<div class="col-md-6">
 		<div data-alert class="alert-box"ng-show="postAdded">{{postAdded}}</div>
+		<div data-alert  ng-show="showMsg" class="alert alert-danger">{{msg}}</div>
 		<form ng-submit="editFormSubmit()" ng-show="showEdit">
 			<h2>Edit Post</h2>
 		<div class="form-group">
@@ -43,5 +46,20 @@
    
 </table>
 </div>
+<div class="col-md-4">
+	<div class="panel">
+		<style type="text/css">
+			.panel {background: #f9f9f9;}
+		</style>
+		<h2>Futured Post</h2>
+		<ul>
+			<li>{{displayTitle}}</li>
+			<li>{{displayDescription}}</li>
+			<li>{{displayUsername}}</li>
+		</ul>
+	</div>
+</div>
+
+
 </div>
 

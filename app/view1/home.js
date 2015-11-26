@@ -14,6 +14,10 @@ angular.module('myApp.home', ['ngRoute','firebase'])
   	templateUrl:'view1/login.html',
   	controller : 'LoginCtrl'
   })
+  .when('/signin',{
+    templateUrl:'view1/signin.html',
+    controller: 'LoginCtrl'
+  })
 }])
 
 .controller('HomeCtrl', [function() {

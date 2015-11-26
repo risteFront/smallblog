@@ -1,6 +1,7 @@
 <div ng-controller="PostCtrl">
 <div class="col-md-6">
-	<div data-alert class="alert-box"ng-show="postAdded">{{postAdded}}</div>
+	<div data-alert class="alert alert-success"ng-show="postAdded">{{postAdded}}</div>
+	<div data-alert  ng-show="showMsg" class="alert alert-danger">{{msg}}</div>
 	<form ng-submit="submitForm()">
 	<div class="form-group">
 		<label for="title" class="title">Title</label>
